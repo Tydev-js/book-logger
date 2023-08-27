@@ -15,6 +15,10 @@ app.get('/books', (req, res) => {
     res.render('index')
 })
 
+app.get('/books/new', (req, res) => {
+    res.render('new')
+})
+
 
 app.listen(3000, () => {
     console.log("SERVING ON LOCAL HOST 3000")

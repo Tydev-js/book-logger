@@ -7,6 +7,16 @@
 </head>
 <body>
     <h1>All Your Books</h1>
+    <% if(books.length > 0){%>
+        <%= console.log(books)  %>
+        <% for (let book of books){ %>
+            <ul>
+                <li><%= book.title  %></li>
+            </ul>
+        <% } %>
+    <% } else { %>
+        <p>Currently no books added.</p>
+    <% } %>
     <a href="/books/new">
         <button>Add A Book</button>
     </a>
